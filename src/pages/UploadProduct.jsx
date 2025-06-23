@@ -101,7 +101,7 @@ const UploadProducts = () => {
     gst: "5%",
     status: "Out of Stock",
   },
-    // Add more dummy data as needed
+   
   ];
 
   const filteredProducts = productData.filter(

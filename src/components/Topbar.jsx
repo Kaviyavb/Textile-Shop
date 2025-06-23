@@ -5,7 +5,7 @@ import userImage from "../assets/user.png"; // Your user image
 const Topbar = () => {
   return (
     <div className="topbar">
-      {/* Top Row for Mobile and Desktop */}
+
       <div className="topbar-row">
         {/* Logo */}
         <div className="logo">.cloths</div>

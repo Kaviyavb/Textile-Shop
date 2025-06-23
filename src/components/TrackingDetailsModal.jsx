@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./TrackingDetailsModal.css"; // Reuse the same CSS file
+import "./TrackingDetailsModal.css"; 
 
 const TrackingDetailsModal = ({ isOpen, onClose, order }) => {
   const [trackingNumber, setTrackingNumber] = useState("");
@@ -18,7 +18,7 @@ const TrackingDetailsModal = ({ isOpen, onClose, order }) => {
     };
 
     console.log("Saved tracking info:", updatedTracking);
-    onClose(); // close modal after save
+    onClose(); 
   };
 
   return (
