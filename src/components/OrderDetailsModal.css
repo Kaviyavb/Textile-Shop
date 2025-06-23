@@ -1,0 +1,116 @@
+/* OrderDetailsModal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 960px;
+  padding: 20px 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 28px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #005226;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h3 {
+  color: #005226;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+}
+
+.section p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.section table th,
+.section table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.section table th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.totals {
+  margin-top: 15px;
+  text-align: right;
+  font-weight: bold;
+  color: #333;
+}
+
+.invoice-btn-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.invoice-btn {
+  padding: 10px 20px;
+  background-color: #005226;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.invoice-btn:hover {
+  background-color: #003c1a;
+}
+
+@media (max-width: 768px) {
+  .modal-box {
+    padding: 20px;
+  }
+
+  .section table {
+    font-size: 12px;
+  }
+
+  .invoice-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

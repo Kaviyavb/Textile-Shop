@@ -1,0 +1,153 @@
+.topbar {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px solid #eee;
+  height:18%;
+}
+
+/* Row with logo + right-section (user, bell) */
+.topbar-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrapper;
+  padding-top: 1.1rem;
+}
+
+/* Logo */
+.logo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #005226;
+}
+
+/* Right Section (bell + user) */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Notification icon */
+.notification {
+  width: 30px;
+  height: 30px;
+  border: 0.7px solid #f4f6fc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* User Info */
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #505050;
+  object-fit: cover;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-size: 25px;
+  font-family: Roboto, sans-serif;
+  color: #505050;
+}
+
+.role {
+  font-size: 14px;
+  color: #505050;
+  font-family: Roboto, sans-serif;
+  padding-top: 10%;
+}
+
+.dropdown-icon {
+  font-size: 25px;
+  color: #505050;
+  padding-left: 4cqi;
+  padding-top: 0%;
+}
+
+/* Search Section */
+.search-wrapper {
+  display: flex;
+    position: relative;
+  width: 75%;
+  padding-left: 16%;
+  padding-right: 20%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 22.7%;
+  font-size: 18px;
+  padding-top: 0.8rem;
+  color: #333;
+
+}
+
+.search-bar {
+  width: 100%;
+  max-width: right;
+  height: 50px;
+  padding-left: 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #005226;
+  background: #bfffea33;
+  outline: none;
+  
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .topbar-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    padding-left: 50px;
+    font-size: 24px;
+  }
+
+  .user-info {
+    display: none; /* Hide name and role if needed for space */
+  }
+
+  .search-bar {
+    max-width: 100%;
+    padding-left: 8%;
+  }
+  .search-wrapper{
+    padding-left: 0%;
+  }
+  .search-icon {
+  position: absolute;
+  left: 1px;
+  font-size: 16px;
+  color: #333;
+  
+}
+
+}

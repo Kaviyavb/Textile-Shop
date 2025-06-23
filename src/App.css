@@ -1,0 +1,24 @@
+/* App.css */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-body {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 116px); /* Adjust height below topbar */
+}
+
+.page-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color:#f9f9f9 ;
+}
+.sidebar {
+  width: 312px;
+  flex-shrink: 0;
+  background-color: white;
+}

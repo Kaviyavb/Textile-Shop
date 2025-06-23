@@ -1,0 +1,150 @@
+/* Orders.css */
+.orders-page {
+  padding-left: 25%;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  border-color: #005226;
+}
+
+.filters-bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.filters-bar button,
+.filters-bar select,
+.filters-bar input[type="date"] {
+  padding: 8px 12px;
+  border: 1px solid #005226;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.filters-bar .search-bar {
+  flex-grow: 1;
+  padding: 8px 12px;
+  border: 1px solid #005226;
+  border-radius: 10px;
+  background-color: #bfffea33;
+}
+
+.orders-table h3 {
+  margin-bottom: 10px;
+  color: #005226;
+  
+}
+.orders-table {
+  background-color: #ffffff;
+  border: 1px solid #005226;
+  border-radius: 10px;
+  border-color: #005226;
+  overflow-x: auto;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(138, 160, 143, 0.893);
+}
+.orders-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border: 1px solid #005226;
+  border-radius: 8px;
+  border-color: #005226;
+  overflow: hidden;
+  font-size:14px;
+}
+.orders-table h2 {
+  color: #005226;
+  margin-bottom: 15px;
+  border-color: #005226;
+  font-size: 22px;
+}
+.orders-table th,
+.orders-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #005226;
+  border-top: 1px solid #005226;
+  font-size: 14px;
+  border-color:1px solid #005226;
+}
+
+.orders-table th {
+  background-color: #f0fdf7;
+  color: #333;
+  font-weight: bold;
+  border-top: 1px solid #005226;
+}
+.orders-table tr:hover {
+  background-color: #e8fdf3;
+  cursor: pointer;
+}
+.total-row td {
+  font-weight: bold;
+  background-color: #fafafa;
+  border-top: 1px solid #005226;
+}
+
+.clickable-row:hover {
+  background-color: #e8fdf3;
+  cursor: pointer;
+}
+
+.green {
+  color: green;
+  font-weight: 600;
+}
+
+.red {
+  color: red;
+  font-weight: 600;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.pagination button,
+.pagination span {
+  padding: 6px 10px;
+  border: 1px solid #005226;
+  border-radius: 6px;
+  background-color: white;
+  color: #005226;
+  cursor: pointer;
+}
+
+.pagination .active {
+  background-color: #005226;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .filters-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .orders-table table {
+    font-size: 12px;
+  }
+
+  .orders-table th,
+  .orders-table td {
+    padding: 6px;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+  }
+  .orders-page {
+    padding-left: 0%;
+  }
+}

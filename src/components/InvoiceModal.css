@@ -1,0 +1,116 @@
+/* InvoiceModal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-box.invoice {
+  background: white;
+  width: 90%;
+  max-width: 1100px;
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.print-btn {
+  padding: 6px 14px;
+  border: 1px solid #005226;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #005226;
+  cursor: pointer;
+}
+
+.invoice-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+
+.invoice-details .column {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #005226;
+}
+
+.totals {
+  text-align: right;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.invoice-btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.invoice-btn {
+  background: #005226;
+  color: white;
+  padding: 10px 24px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .invoice-details {
+    flex-direction: column;
+  }
+  .invoice-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .print-btn {
+    align-self: flex-end;
+  }
+}

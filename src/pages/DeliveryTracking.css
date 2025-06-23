@@ -1,0 +1,148 @@
+.delivery-tracking-page {
+  padding-left: 25%;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+.delivery-tracking-page h2 {
+  font-size: 24px;
+  color: #005226;
+  margin-bottom: 20px;
+}
+
+.delivery-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #005226;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  border-color:  #005226;
+}
+
+.delivery-table th,
+.delivery-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  border-color: #005226 ;
+}
+
+.delivery-table th {
+  background-color: #f0fdf7;
+  color: #005226;
+}
+
+.delivery-table tr:hover {
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+
+.track-btn {
+  padding: 6px 10px;
+  background-color: transparent;
+  border: 1px solid #005226;
+  color: #005226;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.track-btn:hover {
+  background-color: #005226;
+  color: white;
+}
+
+/* Modal Overlay */
+.tracking-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Box */
+.tracking-modal {
+  background-color: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tracking-modal h2 {
+  margin-bottom: 20px;
+  color: #005226;
+}
+
+.tracking-field {
+  margin-bottom: 15px;
+}
+
+.tracking-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.tracking-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.tracking-field span {
+  display: block;
+  font-size: 15px;
+  color: #444;
+  margin-top: 4px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.discard-btn,
+.save-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.discard-btn {
+  background-color: #ccc;
+  color: #333;
+}
+
+.save-btn {
+  background-color: #005226;
+  color: white;
+}
+@media (max-width: 480px){
+.delivery-tracking-page{
+ padding-left:0%;
+
+}
+}
+@media (max-width: 768px){
+.delivery-tracking-page{
+ padding-left:0%;
+
+}
+}

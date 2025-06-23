@@ -1,0 +1,97 @@
+/* UploadProductModal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+ 
+}
+
+.modal-content {
+  background-color: white;
+  padding-left: 25%;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.discard-btn {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.link{
+    background-color: white;
+  color:#005226;
+  border: 1px solid #005226;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 8px 16px;
+  
+}
+.upload-btn {
+  background-color: #005226;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.continue-btn{
+    background-color: white;
+  color: #005226;
+  border: 1px solid #005226;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.upload-image-btn {
+  background-color: #005226;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.label-with-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label-with-action label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.add-btn {
+  background-color: transparent;
+  border: 1px solid #005226;
+  color: #005226;
+  border-radius: 6px;
+  padding: 2px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
